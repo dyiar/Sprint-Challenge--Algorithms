@@ -17,7 +17,7 @@ b)  sum = 0
             l += 1 O(1)
             sum += 1 O(1)
 
-    total runtime is O(n^4) because there are 4 for loops and the constants get cancelled out
+    total runtime is O(n^3) because the k doesn't change in the l for loop. no matter what k is, it will always cycle 10 times.
 
 c)  def bunnyEars(bunnies):
       if bunnies == 0: 
