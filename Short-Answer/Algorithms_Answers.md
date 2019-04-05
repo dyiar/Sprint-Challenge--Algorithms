@@ -36,3 +36,23 @@ Write out your proposed algorithm in plain English or pseudocode and give the ru
 If I had to find the floor where the eggs aren't broken if dropped from there I would first start on a middle level floor. If the egg broke, I would know that all the floors above me could be removed from testing. Then I would pick a floor in the middle of the old midpoint and the ground. If the broke then we can again remove all the above floors from testing. If it didn't, we could eliminate the lower floors from testing. Continue until you have found the right floor.
 
 The runtime of this solution is O(log n) because the runtime of the solution wouldn't increase that much if n was a bigger number.
+
+
+  def find_floor(n):
+    if n == 0:
+      return n
+
+    l = 0
+    r = n
+
+    while n > 0:
+
+      mid = l + (r-1)/2;
+
+      if mid returns an unbroken egg:
+        r = mid -1
+
+      elif mid returns a broken egg:
+        l = mid +1
+
+
